@@ -1,0 +1,81 @@
+body {
+  /* display: grid; */
+  color: black;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    #030a06 0%,
+    #1a571f 20%,
+    #93c25d 40%,
+    #bade90 60%,
+    #66bd04 80%
+  );
+
+  background-size: 100% 200%;
+  animation: movimiento 5s linear infinite alternate;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main div{
+    display: grid;
+    place-content: center;
+}
+
+main img{
+    margin: 1.2rem auto;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+main div p{
+    text-align: center;
+}
+
+.pregunta{
+    font-size: 1.4rem;
+    font-weight: bold;
+}   
+@keyframes movimiento {
+  form {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+#btn-cambiar-camara{
+    background-color: #1a571f;
+    padding: .3rem .6rem;
+    border-radius: .3rem;
+    color: whitesmoke;
+    border: none;
+    outline: solid 3px rgba(255,255,255,0);
+    transition: all ease-in-out .5s;
+    width: fit-content;
+}
+
+.content-elements{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+#btn-cambiar-camara:hover{
+    transition: all ease-in-out .5s;
+    background-color: #1d4820;
+    transform: translateY(2px);
+    outline: solid 3px rgb(207, 202, 53);
+}
